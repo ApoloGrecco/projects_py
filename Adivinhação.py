@@ -44,12 +44,15 @@ for attempt in range(1, total_attempts + 1):
         print(f"Parabéns você acertou o número e fez {points} pontos!")
         break
     else:
-        if(bigger):
-            print(f"Você errou! O seu chute foi maior que o número!")
-        elif (smaller):
-            print(f"Você errou! O seu chute foi menor que o número!")
         lost_points = abs(number_secret - kick)
         points = points - lost_points
-
+        if(bigger):
+            print(f"Você errou! O seu chute foi maior que o número!")
+            if (attempt == total_attempts):
+                print(f"O número secreto era {number_secret}. Você fez {points}")
+        elif (smaller):
+            print(f"Você errou! O seu chute foi menor que o número!")
+            if (attempt == total_attempts):
+                print(f"O número secreto era {number_secret}. Você fez {points}")
 
 print("Fim de jogo!")
