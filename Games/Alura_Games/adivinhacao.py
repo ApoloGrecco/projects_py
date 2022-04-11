@@ -2,9 +2,9 @@ from random import randrange
 
 def play():
 
-    print("***********************************")
+    print("\n***********************************")
     print("*Bem-vindo ao jogo de Adivinhação!*")
-    print("***********************************")
+    print("***********************************\n")
 
     total_attempts = 0
     number_secret = randrange(1, 101)
@@ -12,7 +12,7 @@ def play():
 
     print("Tente adivinhar o número entre 1 á 100!")
     print("Qual nível de dificuldade?")
-    print("(1) Fácil (2) Médio (3) Difícil")
+    print("(1) Fácil (2) Médio (3) Difícil\n")
 
     nivel = int(input("Define o nível: "))
 
@@ -58,3 +58,6 @@ def play():
                     print(f"O número secreto era {number_secret}. Você fez {points}")
 
     print("Fim de jogo!")
+
+if(__name__== "__main__"):
+    play()
