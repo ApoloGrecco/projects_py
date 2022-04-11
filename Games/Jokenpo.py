@@ -5,7 +5,7 @@ if jogador_1 != 'r' and jogador_1 != 'p' and jogador_1 != 't':
 
 jogador_2 = input("Jogador 2: Jogar? ")
 if jogador_2 != 'r' and jogador_2 != 'p' and jogador_2 != 't':
-  print("Símbolos inválidos foram digitados.")s
+  print("Símbolos inválidos foram digitados.")
   exit()
 
 if (jogador_1 == 'r' and jogador_2 == 't') or (jogador_1 == 't' and jogador_2 == 'p') or (jogador_1 == 'p' and jogador_2 == 'r'):
