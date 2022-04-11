@@ -13,8 +13,6 @@ def play():
     right = False
     mistakes = 0
 
-    print(secret_word)
-
     while(not hanged and not right):
 
         kick = give_kick()
