@@ -1,9 +1,9 @@
 from decimal import *
-from typing import List
+
 
 class Account:
 
-    def __init__(self, number, holder, balance, limit = 1000.0):
+    def __init__(self, number, holder, balance, limit=1000.0):
         self.__number = number
         self.__holder = holder.title()
         self.__balance = Decimal(balance)
@@ -30,12 +30,11 @@ class Account:
             accomplished = True
 
     def transfer(self, value, destiny):
-        if(accomplished == True):
+        if (accomplished == True):
             self.withdraw(value)
             destiny.deposit(value)
-        elif(accomplished == False):
+        elif (accomplished == False):
             print("Operação invalida")
-
 
     @property
     def balance(self):
@@ -59,9 +58,4 @@ class Account:
 
     @staticmethod
     def bank_codes():
-        return {"BB": "001", "Caixa":"104", "Bradesco":"237"}
-
-
-
-
-
+        return {"BB": "001", "Caixa": "104", "Bradesco": "237"}
