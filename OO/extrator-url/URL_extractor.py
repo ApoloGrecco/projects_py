@@ -48,3 +48,15 @@ class URLExtractor:
     #
     # def __eq__(self, other):
     #     return self.url == other.url
+
+    def currency_conversion(self, destiny, source, the_amount, price):
+        if destiny == 'real':
+            #convertendo de real para dolar
+            value = float(the_amount) * price
+            return print(f"Convertendo R${the_amount} ({destiny} para {source}): ${value:.2f}")
+        elif destiny == 'dolar':
+            #convertendo de dolar para real
+            value = float(the_amount) / price
+            return print(f"Convertendo ${the_amount} ({destiny} para {source}): R${value:.2f}")
+
+
