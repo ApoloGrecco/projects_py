@@ -1,3 +1,4 @@
+import requests
 
 
 class SearchAdress:
@@ -12,7 +13,7 @@ class SearchAdress:
     def __str__(self):
         return self.format_cep()
 
-    def valid_cep (self, cep):
+    def valid_cep(self, cep):
         if len(cep) == 8:
             return True
         else:
@@ -20,3 +21,12 @@ class SearchAdress:
 
     def format_cep(self):
         return f"{self.cep[:5]}-{self.cep[5:]}"
+
+    def acess_cep(self):
+        url = requests.get(f"https://viacep.com.br/ws/{self.cep}/json/")
+        datas = url.json()
+        return (
+            datas['bairro'],
+            datas['localidade'],
+            datas['uf']
+        )

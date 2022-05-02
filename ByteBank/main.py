@@ -22,8 +22,10 @@ registration = Datesbr()
 print(registration.format_date())
 print(registration.registration_time())
 
-cep = 25870145
+cep = "06826530"
 object_cep = SearchAdress(cep)
-print(object_cep)
 
+district, locality, state = object_cep.acess_cep()
+
+print(f"{district} - {locality} - {state} - {object_cep}")
 
