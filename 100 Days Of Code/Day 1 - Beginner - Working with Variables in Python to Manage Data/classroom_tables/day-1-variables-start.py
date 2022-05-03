@@ -6,6 +6,6 @@ print(name)
 name = "Angela"
 print(name)
 
-name = input("Whats is your name? ")
-length = len(name)
+user_name = input("Whats is your name? ")
+length = len(user_name)
 print(length)
