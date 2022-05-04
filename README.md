@@ -10,4 +10,4 @@ Whatever the improvement or change, it can be done regardless of the date each f
 
 Nesse repositório você vai encontrar um pouco da minha caminhada nos estudos com a linguagem Python e suas API's. A grande quantidade foi a partir de exercícios ou desafios em cursos, porém se encontra também projetos e estudos pessoais meus.
 
-Seja qual for a melhoria ou alteração, a mesma pode ser feita independente da data em que cada arquivo foi depositado, sempre prezando por um código limpo e legível para qualquer pessoa consiga utilizado e entendê-lo!
+Seja qual for a adicão alteração, a mesma pode ser feita independente da data em que cada arquivo foi depositado, sempre prezando por um código limpo e legível para qualquer pessoa consiga utilizar e entender!
