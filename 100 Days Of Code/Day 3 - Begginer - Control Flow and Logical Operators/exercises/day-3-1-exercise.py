@@ -6,6 +6,7 @@ number = int(input("Which number do you want to check? "))
 
 module = number % 2
 
+
 if module != 0:
     print("This is an odd number")
 else:
