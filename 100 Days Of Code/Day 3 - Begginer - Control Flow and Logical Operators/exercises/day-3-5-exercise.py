@@ -30,7 +30,7 @@ if name_one_lower.count("l") or name_two_lower.count("l"):
 if name_one_lower.count("o") or name_two_lower.count("o"):
     score_love += name_one_lower.count("o")
     score_love += name_two_lower.count("o")
-if name_one_lower.count("o") or name_two_lower.count("v"):
+if name_one_lower.count("v") or name_two_lower.count("v"):
     score_love += name_one_lower.count("v")
     score_love += name_two_lower.count("v")
 if name_one_lower.count("e") or name_two_lower.count("e"):
